@@ -1,0 +1,148 @@
+.skills{
+    .container{
+        padding-top: 40px;
+    }
+    &__text{
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 80px;
+        text-align: center;
+    }
+    &__blocks{
+        padding-top: 100px;
+        display: grid;
+        grid-template-columns: 435px auto;
+        grid-template-rows: 531px 363px;
+        grid-gap: 20px 18px;
+
+        &-text{
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 80px;
+            color:#263238;
+        }
+        &-descrspan{
+            padding-top: 10px;
+        }
+        &-descr{
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 400;
+            color: #8f95a5;
+            &__second{
+                padding-top: 25px;
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 400;
+                color: #8f95a5;
+            }
+        }
+        &-padding{
+            padding-left: 43px;
+        }
+        .item{
+            &__speaking{
+                grid-area: 1/1/3/1;
+                &-img{
+                    height: 390px;
+                    width: 390px;
+                }
+            }
+            &__writing{
+                grid-area:1/2/1/2;
+                &-img{
+                    width: 293px;
+                    height: 293px;
+                }
+            }
+            &__reading{
+                grid-area:1/3/2/3;
+                &-img{
+                    width: 371px;
+                    height: 247px;
+                }
+            }
+            &__listening{
+                grid-area:2/2/3/4 ;
+                &-img{
+                    width: 382px;
+                    height: 255px;
+                }
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+
+
+            }
+        }
+
+        &-item{
+            background-color: #f5f5f5;
+            padding: 5px;
+            border-radius: 10px;
+        }
+    }
+    &__btn{
+        color: white;
+        border: 2px solid #263238;
+        background-color: #263238;
+        width: 230px;
+        height: 60px;
+        border-radius: 5px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+
+    }
+}
+
+.speaking{
+    &-img{
+        padding-top:25px ;
+    }
+    &-text{
+        padding-left: 43px;  
+        button{
+            margin: 36px 0;
+        }
+    }
+
+}
+
+.writing{
+    &-img{
+        position: absolute;
+        padding-left: 122px;
+    }
+    &-text{
+        padding-top: 251px;
+        padding-left:41px;
+        button{
+            margin: 33px 0;
+        }
+    }
+}
+
+.reading{
+    &-img{
+    }
+    &-text{     
+        padding-left: 43px;
+        button{
+            margin: 35px 0;
+        }
+    }
+}
+
+.listening{
+    &-img{
+        display: flex;
+        align-items: center;
+    }
+    &-text{
+        padding-top: 45px;
+        padding-left: 45px;
+        button{
+            margin: 20px 0;
+        }
+    }
+}
