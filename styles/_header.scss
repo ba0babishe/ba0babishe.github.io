@@ -27,6 +27,11 @@
         letter-spacing: 0.5px;
         font-weight: 400;
         color: black;
+        &:hover{
+            background-color: #263238;
+            color: white;
+            transition: 0.3s;
+        }
     }
 }
 
@@ -48,3 +53,4 @@
         line-height: 30px;
     }
 }
+

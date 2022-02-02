@@ -25,6 +25,7 @@
             padding-top: 10px;
         }
         &-descr{
+            width: 355px;
             font-size: 16px;
             line-height: 24px;
             font-weight: 400;
@@ -91,7 +92,11 @@
         font-weight: 500;
         font-size: 18px;
         line-height: 27px;
-
+        &:hover{
+            background-color: white;
+            color: #263238;
+            transition: 0.3s;
+        }
     }
 }
 

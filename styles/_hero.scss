@@ -28,6 +28,8 @@
         }
     }
     &__descr{
+        display: block;
+        width: 550px;
         padding-top: 20px;
         padding-bottom: 10px;
         font-size: 24px;
@@ -39,6 +41,7 @@
         box-sizing: border-box;
         border-radius: 15px;
         background-color: #263238;
+        border: 3px solid #263238;
         padding: 17px 57px;
         font-weight: 300;
         font-size: 36px;
@@ -47,6 +50,12 @@
         height: 118px;
         color:white;
         letter-spacing: 1.8px;
+        &:hover{
+            background-color: white;
+            color: #263238;
+            border: 3px solid #263238;
+            transition: 0.3s;
+        }
     }
     &__content{
         padding-left: 10px;
