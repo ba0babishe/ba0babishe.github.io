@@ -1,36 +1,38 @@
 .hero{
+    max-height: 900px;
     padding-bottom: 60px;
     .container{
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 1fr 1fr;
     }
 
     &__text{
         padding-top: 66px;
         display: grid;
-        grid-template-rows: 221px 213px 133px;
+        grid-template-rows: 1.2fr 0.7fr 1fr;
         &__head{
-            display: flex;
-            align-items: center;
+            display: block;
+            max-width: 500px;
             &__main{
+                width: 100%;
                 font-style: normal;
                 font-weight: 600;
                 font-size: 64px;
                 line-height: 80px;
             }
             &__img{
-                margin-left: 55px;
-                margin-top: 64px;
-                width: 85.24px;
-                height: 85.24px;
+                margin: 70px 0 7px 7px;
+                float: right;
+                max-width: 85.24px;
+                max-height: 85.24px;
                 transform: rotate(38.44deg);
             }
         }
     }
     &__descr{
-        display: block;
-        width: 550px;
         padding-top: 20px;
+        display: block;
+        max-width: 550px;
         padding-bottom: 10px;
         font-size: 24px;
         line-height: 36px;
@@ -38,6 +40,7 @@
         color: #8f95a5;
     }
     &__button{
+        margin-top: 20px;
         box-sizing: border-box;
         border-radius: 15px;
         background-color: #263238;
@@ -46,8 +49,8 @@
         font-weight: 300;
         font-size: 36px;
         line-height: 54px;
-        width: 438px;
-        height: 118px;
+        max-width: 438px;
+        max-height: 118px;
         color:white;
         letter-spacing: 1.8px;
         &:hover{
@@ -58,6 +61,51 @@
         }
     }
     &__content{
+        position: relative;
+        display: block;
+        max-width: 660px;
+        max-height: 660px;
         padding-left: 10px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+@media(max-width:992px){
+    .hero{
+        &__text{
+            padding-top: 40px;
+            &__head{
+                max-height: 200px;
+                &__main{
+                    display: block;
+                    font-weight: 600;
+                    font-size: 48px;
+                    line-height: 64px;
+                    max-width: 85%;
+                }
+                &__img{
+                    max-width: 58.71px;
+                    max-height: 58.71px;
+                }
+
+            }
+        }
+        &__descr{
+            display: block;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 30px;
+            max-width: 400px;
+            max-height: 130px;
+        }
+        &__button{
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 36px;
+            max-width: 292px;
+            max-height: 80px;
+        }
     }
 }

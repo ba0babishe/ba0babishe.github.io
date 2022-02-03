@@ -1,5 +1,6 @@
 .skills{
     .container{
+        max-width: 1370px;
         padding-top: 40px;
     }
     &__text{
@@ -9,10 +10,11 @@
         text-align: center;
     }
     &__blocks{
+        max-height: 900px;
         padding-top: 100px;
         display: grid;
-        grid-template-columns: 435px auto;
-        grid-template-rows: 531px 363px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         grid-gap: 20px 18px;
 
         &-text{
@@ -25,12 +27,15 @@
             padding-top: 10px;
         }
         &-descr{
-            width: 355px;
+            max-width: 355px;
+            max-height: 100%;
             font-size: 16px;
             line-height: 24px;
             font-weight: 400;
             color: #8f95a5;
             &__second{
+                max-width: 355px;
+                max-height: 100%;
                 padding-top: 25px;
                 font-size: 16px;
                 line-height: 24px;
@@ -40,34 +45,36 @@
         }
         &-padding{
             padding-left: 43px;
+            padding-right: 43px;
         }
         .item{
             &__speaking{
                 grid-area: 1/1/3/1;
                 &-img{
-                    height: 390px;
-                    width: 390px;
+                    max-height: 390px;
+                    max-width: 100%;
                 }
             }
             &__writing{
                 grid-area:1/2/1/2;
                 &-img{
-                    width: 293px;
-                    height: 293px;
+                    max-width: 100%;
+                    max-height: 100%;
                 }
             }
             &__reading{
                 grid-area:1/3/2/3;
                 &-img{
-                    width: 371px;
-                    height: 247px;
+                    max-width: 100%;
+
                 }
             }
             &__listening{
                 grid-area:2/2/3/4 ;
+                max-width: 885px;
                 &-img{
-                    width: 382px;
-                    height: 255px;
+                    max-width: 100%;
+                    max-height: 255px;
                 }
                 display: grid;
                 grid-template-columns: 1fr 1fr;
@@ -80,14 +87,16 @@
             background-color: #f5f5f5;
             padding: 5px;
             border-radius: 10px;
+            max-width: 435px;
         }
     }
     &__btn{
         color: white;
         border: 2px solid #263238;
         background-color: #263238;
-        width: 230px;
-        height: 60px;
+        padding: 15px 60px;
+        max-height: 100%;
+        max-width: 100%;
         border-radius: 5px;
         font-weight: 500;
         font-size: 18px;
@@ -105,7 +114,8 @@
         padding-top:25px ;
     }
     &-text{
-        padding-left: 43px;  
+        padding-left: 43px;
+        padding-right: 43px; 
         button{
             margin: 36px 0;
         }
@@ -115,12 +125,19 @@
 
 .writing{
     &-img{
-        position: absolute;
-        padding-left: 122px;
+        max-height: 293px;
+        max-width: 293px;
+        margin-left: 120px;
+        margin-right: auto;
+        img{
+            width: 100%;
+            height: 100%;
+        }
     }
     &-text{
-        padding-top: 251px;
-        padding-left:41px;
+        margin-top: -15px;
+        margin-left: 40px;
+        margin-right: 40px;
         button{
             margin: 33px 0;
         }
@@ -128,8 +145,13 @@
 }
 
 .reading{
+    &-img{
+
+        max-width: 371px;
+    }
     &-text{     
         padding-left: 43px;
+        padding-right: 43px;
         
         button{
             margin: 35px 0;
@@ -141,12 +163,70 @@
     &-img{
         display: flex;
         align-items: center;
+        max-width: 100%;
     }
     &-text{
         padding-top: 45px;
         padding-left: 45px;
+        padding-right: 45px;
         button{
             margin: 20px 0;
+        }
+    }
+}
+
+@media(max-width:992px){
+    .skills{
+        height: 900px;
+        &__text{
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 80px;
+        }
+        &__blocks{
+            max-height: 00px;
+            &-text{
+                font-weight: 600;
+                font-size: 22px;
+                line-height: 80px;
+            }
+            &-descr{
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+                &__second{
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 21px;
+                }
+            }
+        }
+        &__btn{
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;
+            padding: 10px 30px;
+            max-width: 250px;
+            max-height: 57px;
+        }
+    }
+    .speaking-text{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .writing{
+        &-img{
+            margin-left: 75px;
+        }
+        &-text{
+        margin: 0 15px 0 15px;
+    }}
+    .reading-text{
+        padding:0 15px 0 15px;
+    }
+    .listening{
+        &-text{
+            padding:15px;
         }
     }
 }

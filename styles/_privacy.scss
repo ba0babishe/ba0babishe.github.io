@@ -1,12 +1,27 @@
 .privacy{
+    &__psevdo{
+        max-width: 1370px;
+        margin: auto;
+        &::after{
+            margin: auto;
+            justify-self: center;
+            display: block;
+            content: "";
+            height: 1px;
+            background-color: #c4c4c4;
+            width: 95%;
+        }
+}
     .container{
-        border-top: 1px solid #c4c4c4;
         display: flex;
         justify-content: space-between;
+        height: 150px;
+        align-items: center;
+        text-align: center;
     }
     &-logo{
-        padding-top: 31px;
-        padding-bottom: 64px;
+        display: block;
+        align-items: center;
         &__text{
             color: black;
             font-weight: 400;
@@ -18,8 +33,7 @@
         }
     }
     &-nav{
-        margin-top: 55px;
-        margin-bottom: 55px;
+        display: flex;
         &__list{
             display: flex;
         }
@@ -28,18 +42,67 @@
             color:#8f95a5;
             span{
             margin-left: 5px;
-            font-weight: normal;
+            font-weight: 400;
             font-size: 24px;
             line-height: 36px;
             }
         }
         &__link{
             color: #8f95a5;
-            font-weight: normal;
+            font-weight: 400;
             font-size: 24px;
             line-height: 36px;
             letter-spacing: 0.5px;
+            position: relative;
+            &::after{
+                content: "";
+                display: block;
+                width: 100%;
+                height: 2px;
+                position: absolute;
+                background-color: #8f95a5;
+                opacity: 0;
+                transition: opacity .1s linear ;
+            }
+            &:hover:after{
+                opacity: 0.5;
+            }
         }
     }
 
+}
+
+@media(max-width:992px){
+    .privacy{
+        &-logo{
+            &__text{
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 45px;
+            }
+        }
+        &-nav{
+            max-width: 900px;
+            &__item{
+                max-width: 300px;
+                max-height: 24px;
+                span{
+                    height: 20px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+            &__list{
+                max-width: 600px;
+            }
+            &__link{
+                    height: 20px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: 1px;
+            }
+        }
+    }
 }
