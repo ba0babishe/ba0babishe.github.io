@@ -82,6 +82,10 @@ a {
           justify-content: center;
 }
 
+.header__burger-logo {
+  left: -100%;
+}
+
 .header__burger-blocks {
   margin: auto;
 }
@@ -190,10 +194,6 @@ a {
   display: none;
 }
 
-.logo-burger {
-  display: none;
-}
-
 @media (max-width: 767px) {
   body.lock {
     overflow: hidden;
@@ -206,6 +206,7 @@ a {
         -ms-flex-pack: justify;
             justify-content: space-between;
     position: relative;
+    left: 0;
   }
   .header__burger-logo::after {
     content: "";
@@ -218,7 +219,6 @@ a {
     bottom: -20px;
   }
   .logo-burger {
-    display: inline;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

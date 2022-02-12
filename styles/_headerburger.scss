@@ -1,9 +1,7 @@
 .header__burger{
     display: none;
 }
-.logo-burger{
-    display: none;
-}
+
 
 @media(max-width:767px){
     body{
@@ -15,6 +13,7 @@
         display: flex;
         justify-content: space-between;
         position: relative;
+        left: 0;
         &::after{
             content: "";
             text-align: center;
@@ -28,7 +27,6 @@
         }
     }
     .logo-burger{
-        display: inline;
         display: flex;
         font-weight: 400;
         font-size: 30px;

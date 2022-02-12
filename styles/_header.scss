@@ -12,6 +12,9 @@
         width: 100%;
         justify-content: center;
     }
+    &__burger-logo{
+        left:-100%;
+    }
     &__burger-blocks{
         margin: auto;
     }
