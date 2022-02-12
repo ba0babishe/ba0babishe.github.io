@@ -26,9 +26,11 @@
         line-height: 54px;
         position: relative;
         z-index: 6;
-        
         span{
             color:grey;
+        }
+        &-burger{
+            display: none;
         }
     }
     &__btn{
