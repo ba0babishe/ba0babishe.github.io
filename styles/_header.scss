@@ -1,7 +1,4 @@
 .header {
-    &__burger-logo{
-        display: none;
-    }
     padding: 50px 0;
     &__container {
         @include flex-v-center;
@@ -13,7 +10,7 @@
         justify-content: center;
     }
     &__burger-logo{
-        left:-100%;
+        opacity: 0;
     }
     &__burger-blocks{
         margin: auto;

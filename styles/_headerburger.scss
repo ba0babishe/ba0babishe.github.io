@@ -1,6 +1,4 @@
-.header__burger{
-    display: none;
-}
+
 
 
 @media(max-width:767px){
@@ -14,6 +12,7 @@
         justify-content: space-between;
         position: relative;
         left: 0;
+        opacity: 1;
         &::after{
             content: "";
             text-align: center;
@@ -23,7 +22,6 @@
             height: 1px;
             z-index: 10;
             bottom: -20px;
-
         }
     }
     .logo-burger{
