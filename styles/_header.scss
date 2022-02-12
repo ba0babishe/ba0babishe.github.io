@@ -1,8 +1,19 @@
 .header {
+    &__burger-logo{
+        display: none;
+    }
     padding: 50px 0;
     &__container {
         @include flex-v-center;
         @include flea-all-sb;
+    }
+    &__burger-back{
+        @include flex-v-center;
+        width: 100%;
+        justify-content: center;
+    }
+    &__burger-blocks{
+        margin: auto;
     }
     &--main{
         background-color: #fff;
@@ -15,10 +26,11 @@
         line-height: 54px;
         position: relative;
         z-index: 6;
-        }
+        
         span{
             color:grey;
         }
+    }
     &__btn{
         border: 2px solid #263238;
         box-sizing: border-box;

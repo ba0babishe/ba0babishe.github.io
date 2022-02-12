@@ -1,0 +1,10 @@
+$(Document).ready(function(){
+    $('.header__burger').click(function(event){
+        $('.header__container,.header__background,.header__burger-back').addClass('active')
+        $('body').addClass('lock');
+    });
+    $('.header__krest').click(function(event){
+        $('.header__container,.header__background,.header__burger-back').removeClass('active')
+        $('body').removeClass('lock');
+    });
+});
