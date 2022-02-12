@@ -104,10 +104,6 @@ a {
   color: grey;
 }
 
-.header .logo-burger {
-  display: none;
-}
-
 .header__btn {
   border: 2px solid #263238;
   -webkit-box-sizing: border-box;
@@ -194,6 +190,10 @@ a {
   display: none;
 }
 
+.logo-burger {
+  display: none;
+}
+
 @media (max-width: 767px) {
   body.lock {
     overflow: hidden;
@@ -218,6 +218,7 @@ a {
     bottom: -20px;
   }
   .logo-burger {
+    display: inline;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
