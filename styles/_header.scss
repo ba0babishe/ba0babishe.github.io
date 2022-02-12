@@ -1,4 +1,8 @@
 .header {
+    &__background{
+        width: 0;
+        height: 0;
+    }
     padding: 50px 0;
     &__container {
         @include flex-v-center;
