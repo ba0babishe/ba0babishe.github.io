@@ -30,7 +30,16 @@ a{
     padding: 0 15px;
     max-width: 1370px;
 }
-
+@media(max-width:575px){
+    .container{
+        padding: 0 30px;
+    }
+}
+@media(max-width:320px){
+    .container{
+        padding: 0 15px;
+    }
+}
 .list-reset{
     list-style: none;
     margin: 0;

@@ -106,3 +106,96 @@
         }
     }
 }
+
+@media(max-width:767px){
+    .privacy{
+        .container{
+            max-height: 80px;
+            padding: 0 20px 0 20px;
+        }
+        &-logo{
+            &__text{
+                font-weight: normal;
+                font-size: 30px;
+                line-height: 45px;
+            }
+        }
+        &-nav{
+            max-width: 500px;
+            &__item{
+                max-width: 300px;
+                max-height: 24px;
+                span{
+                    height: 20px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+            &__list{
+                max-width: 600px;
+            }
+            &__link{
+                    height: 20px;
+                    font-weight: normal;
+                    font-size: 13px;
+                    line-height: 19px;
+                    letter-spacing: 1px;
+            }
+        }
+    }
+}
+
+@media(max-width:575px){
+    .privacy{
+        &-logo{
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 45px;
+        }
+        &-nav{
+            &__link{
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 18px;
+                span{
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:320px){
+    .privacy{
+        height: 110px;
+        .container{
+            padding: 0 10px;
+            flex-direction: column;
+        }
+        &-logo{
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 36px;
+        }
+        &-nav{
+            &__item{
+                margin: 0;
+                span{
+                    font-weight: 500;
+                    font-size: 11px;
+                    line-height: 16px;
+                    margin: 0 1px;
+                }
+            }
+            &__link{
+                font-weight: 500;
+                font-size: 11px;
+                line-height: 16px;
+                letter-spacing: 0.3px;            
+            }
+        }
+    }
+}

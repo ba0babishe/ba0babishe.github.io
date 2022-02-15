@@ -191,3 +191,120 @@
     height:100%;
     opacity: 1;
 }
+
+@media(max-width:575px){
+    .header{
+        padding: 39px 0 0 0;
+        &__krest{
+            width: 30px;
+            height: 30px;
+            right: 40px;
+            top: 10px;
+            margin: auto 0 auto 0;
+        }
+        .header__burger-back{
+            width: 100%;
+            height: 100%;
+        }
+        .header__burger{
+            width: 45px;
+            height: 25px;
+            span{
+                content: "";
+                top:11px;
+                height: 4.5px;
+            }
+            &::after{
+                content: "";
+                height: 4.5px;
+                bottom: 0;
+            }
+            &::before{
+                content: "";
+                height: 4.5px;
+                top: 0;
+            }
+        }
+        .logo{
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 45px;
+            &-burger{
+                font-weight: normal;
+                font-size: 30px;
+                line-height: 45px;
+            }
+        }
+        &__btn{
+            border: 2px solid #263238;
+            box-sizing: border-box;
+            border-radius: 5px;
+            max-width: 330px;
+            max-height: 70px;
+            padding: 15px 90px;
+        }
+        .nav{
+            &__link{
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 65px;
+            }
+        }
+    }
+}
+
+@media(max-width:320px){
+    .header{
+        .header__burger{
+            right: 0;
+            width: 33.53px;
+            height: 19px;
+            &-blocks{
+                padding: 15px 0 0 15px ;
+            }
+            span{
+                content: "";
+                top:8px;
+                height: 3.35px;
+            }
+            &::after{
+                content: "";
+                height: 3px;
+                bottom: 0;
+            }
+            &::before{
+                content: "";
+                height: 3.35px;
+                top: 0;
+            }
+        }
+        .logo{
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 36px;
+            &-burger{
+                font-weight: normal;
+                font-size: 24px;
+                line-height: 36px;
+            }
+        }
+        .nav{
+            &__link{
+                font-weight: 500;
+                font-size: 22px;
+                line-height: 65px;
+            }
+        }
+        &__btn{
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 30px;
+            border: 2px solid #263238;
+            box-sizing: border-box;
+            border-radius: 5px;
+            max-width: 290px;
+            max-height: 65px;
+            padding: 15px 90px;
+        }
+    }
+}
